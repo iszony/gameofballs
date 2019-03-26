@@ -1,0 +1,144 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.scoreblock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.item-fade {
+  vertical-align: top;
+  //TODO
+}
+h1 {
+  color: #484848;
+  font-weight: 100;
+  font-size: 20px;
+  margin-right: 700px;
+}
+
+#field {
+  background: #DCDCDC;
+  position: relative;
+  /*ehhez képest mozognak a labdák*/
+  overflow: hidden;
+  align-items: center;
+}
+
+#field>div {
+  border-radius: 50%;
+  position: absolute;
+  /*azért, hogy koordinátákat el lehessen helyezni*/
+}
+
+#winner {
+  visibility: hidden;
+  font-size: 30px;
+  color: red;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 50px;
+  z-index: 1;
+}
+
+.level{
+  padding-top: 2px;
+  margin-left: 410px;
+  color: #484848;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.score {
+  display: inline;
+}
+
+.timer {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  margin-right: 700px;
+  display: inline-block;
+}
+
+.timer>div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #DCDCDC;
+  display: inline-block;
+  width: 70px;
+  max-width: 70px;
+  height: 70px;
+  max-height: 70px
+}
+
+.timer div>span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #484848;
+  display: inline-block;
+  width: 35px;
+  max-width: 35px;
+  height: 20px;
+  max-height: 20px
+}
+
+.startButton {
+  margin-top: 170px;
+  margin-left: 170px;
+  text-align: center;
+  z-index:1;
+}
+
+.button {
+  border: 1px solid #484848;
+  text-decoration: none;
+  border-radius: 0.12em;
+  box.sizing: border-box;
+  line-height: 40px;
+  font-weight: 400;
+  color: #484848;
+  text-align: center;
+  transition: all 0.2s;
+  padding: 0.35em 1.2em;
+  width: 70px;
+  height: 40px;
+  visibility: hidden;
+}
+
+.button:hover {
+  color: #FFFFFF;
+  background-color: #484848;
+}
+
+@media all and (max-width:30em) {
+  .button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+.smalltext {
+  padding-top: 7px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#smallTextSec {
+  margin-right: 3px;
+}
