@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="balls.css">
+</head>
+
+<body>
+  <div class="flex-container">
+
+    <div id="field">
+      <div class="startButton">
+        <div class="button">PLAY</div>
+      </div>
+      <div class="level">
+         <p>Score: </p>
+         <p id="levelp">0</p> </div>
+
+      <div id="winner">
+        <h2>GAME OVER</h2>
+        <div class="scoreblock">
+          <p> Score: </p>
+          <p id='score'></p>
+        </div>
+      </div>
+    </div>
+    <div class="flex-column">
+
+      <div class="h1">
+        <h1>Hátralévő idő:</h1>
+      </div>
+
+      <div class="timer" id="timerdiv">
+        <div class="minTimer">
+          <span class="minutes">01</span>
+          <div class="smalltext">Perc</div>
+        </div>
+        <div class="secTimer">
+          <span class="seconds">00</span>
+          <div class="smalltext" id="smallTextSec">Másodperc</div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+</body>
+<script src="balls.js"></script>
+
+</html>
